@@ -9,5 +9,7 @@ class Curl extends CI_Controller {
 
   public function Index(){
       echo "Hello world";
+      echo "Hello worl two";
+      $qwer;
   }
 }
