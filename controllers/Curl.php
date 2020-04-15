@@ -13,10 +13,6 @@ class Curl extends CI_Controller {
   function login($url,$login,$pass){
 
    $ch = curl_init();
-   if(strtolower((substr($url,0,5))=='https')) { // если соединяемся с https
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-   }
    curl_setopt($ch, CURLOPT_URL, $url);
    curl_setopt($ch, CURLOPT_COOKIESESSION, true);
    // откуда пришли на эту страницу
